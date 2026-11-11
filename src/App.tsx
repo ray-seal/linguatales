@@ -16,7 +16,8 @@ const modeDetails:Record<ReaderMode,{label:string;detail:string;size:number}> = 
 };
 export default function App() {
   const [view,setView]=useState<View>("library"),[filter,setFilter]=useState("All stories"),[search,setSearch]=useState(""),[chosen,setChosen]=useState(""),[matched,setMatched]=useState<string[]>([]),[hint,setHint]=useState("Choose an English word, then its French match."),[index,setIndex]=useState(0),[translation,setTranslation]=useState(false),[selectedSentence,setSelectedSentence]=useState<string|null>(null),[dict,setDict]=useState<Word|null>(null),[lang,setLang]=useState("fr"),[progress,setProgress]=useState<Progress>(load),[mode,setMode]=useState<ReaderMode>("beginner"),[imported,setImported]=useState<ImportedBook[]>([]),[activeImport,setActiveImport]=useState<ImportedBook|null>(null),[importMessage,setImportMessage]=useState(""),[busy,setBusy]=useState(false);
-  useEffect(()=>{void loadImportedBooks().then(setImported).catch(()=>setImportMessage("Could not load your local bookshelf."));},[]);\n  const categories=["All stories","Little readers","Teen shelf","Grown-up reads","BookTok corner","True crime"];
+  useEffect(()=>{void loadImportedBooks().then(setImported).catch(()=>setImportMessage("Could not load your local bookshelf."));},[]);
+  const categories=["All stories","Little readers","Teen shelf","Grown-up reads","BookTok corner","True crime"];
   const filtered=useMemo(()=>shelves.filter(s=>(filter==="All stories"||s.category===filter)&&(s.title.toLowerCase().includes(search.toLowerCase())||s.description.toLowerCase().includes(search.toLowerCase()))),[filter,search]);
   const storySentences:ReaderSentence[]=activeImport ? activeImport.chapters.flatMap((chapter)=>chapter.sentences.map((s,si)=>({id:chapter.id+"-"+si,source:s}))) : sentences.map(([en,fr],i)=>({id:"goldilocks-"+i,source:fr,target:en}));
   const pageSize=modeDetails[mode].size;
