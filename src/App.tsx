@@ -22,8 +22,8 @@ export default function App() {
   const storySentences:ReaderSentence[]=activeImport ? activeImport.chapters.flatMap((chapter)=>chapter.sentences.map((s,si)=>({id:chapter.id+"-"+si,source:s}))) : sentences.map(([en,fr],i)=>({id:"goldilocks-"+i,source:fr,target:en}));
   const pageSize=modeDetails[mode].size;
   const pageCount=Math.max(1,Math.ceil(storySentences.length/pageSize));
-  const pageSentences=storySentences.slice(Math.floor(index/pageSize)*pageSize,Math.floor(index/pageSize)*pageSize+pageSize);
-  const current=storySentences[index];
+  const pageStart=Math.floor(index/pageSize)*pageSize;
+  const pageSentences=storySentences.slice(pageStart,pageStart+pageSize);
   const translations=[...words].reverse();
   function start(book:ImportedBook|null=null){setActiveImport(book);setMatched([]);setChosen("");setHint("Choose an English word, then its French match.");setIndex(0);setSelectedSentence(null);setTranslation(false);setView(book?"reader":"match");}
   function match(fr:string){if(!chosen){setHint("Choose an English word first.");return;}const w=words.find(x=>x.id===chosen);if(w?.fr===fr){setMatched(a=>[...a,chosen]);setChosen("");setHint("Perfect! "+w.en+" = "+w.fr);}else setHint("Not quite. Try another match!");}
