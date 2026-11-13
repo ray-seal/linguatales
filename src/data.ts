@@ -25,5 +25,9 @@ export const shelves=[
 {id:"clockwork",title:"The Clockwork Detective",fr:"Le Détective mécanique",category:"Teen shelf",level:"A2",minutes:12,theme:"blue",ready:true,description:"A missing invention, a locked workshop and a mystery that ticks louder every hour."},
 {id:"train",title:"The Last Train Home",fr:"Le Dernier Train",category:"Grown-up reads",level:"B1",minutes:18,theme:"night",ready:true,description:"A late-night journey brings two strangers face to face with a secret neither expected."},
 {id:"velvet",title:"A Velvet Alibi",fr:"Un Alibi de velours",category:"BookTok corner",level:"B2",minutes:20,theme:"velvet",ready:true,description:"Sharp tongues, slow-burn chemistry and one very inconvenient secret."},
-{id:"evidence",title:"The Quiet Evidence",fr:"Les Preuves silencieuses",category:"True crime",level:"B2",minutes:22,theme:"slate",ready:true,description:"A carefully sourced case file exploring evidence, investigation and the stories facts can tell."}
+{id:"evidence",title:"The Quiet Evidence",fr:"Les Preuves silencieuses",category:"True crime",level:"B2",minutes:22,theme:"slate",ready:true,description:"A carefully sourced case file exploring evidence, investigation and the stories facts can tell."},
+
+{id:"lantern",title:"The Little Lantern",fr:"La Petite Lanterne",category:"Little readers",level:"A1",minutes:5,theme:"gold",ready:true,description:"A girl, a lantern and a small act of courage on a dark evening."},
+{id:"biker",title:"The Biker's Wife",fr:"La Femme du motard",category:"Grown-up reads",level:"A2",minutes:8,theme:"night",ready:true,description:"A late ride, a broken-down bike and a reunion in the rain."},
+{id:"boy",title:"The Boy Who Wasn't Unalived",fr:"Le Garçon qui a survécu",category:"Teen shelf",level:"A2",minutes:8,theme:"blue",ready:true,description:"A boy discovers that being himself is braver than being the loudest in the room."}
 ];
