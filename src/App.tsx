@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpen, Check, Clock3, Flame, Headphones, Languages, Library, Search, Sparkles, Volume2, X, Lightbulb, RotateCcw, Upload, BookMarked } from "lucide-react";
 import { sentences, shelves, words, type Word } from "./data";
+import { storyContent } from "./storyContent";
 import { importEpub, loadImportedBooks, saveImportedBook, type ImportedBook } from "./lib/epub";
 
 type View = "library" | "match" | "reader";
