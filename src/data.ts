@@ -20,10 +20,10 @@ export const sentences=[
 ["Goldilocks woke up, saw the bears and ran all the way home.","Boucle d'Or se réveilla, vit les ours et courut jusqu'à chez elle."]];
 export const shelves=[
 {id:"goldilocks",title:"Goldilocks and the Three Bears",fr:"Boucle d'Or et les Trois Ours",category:"Little readers",level:"A1",minutes:6,theme:"gold",ready:true,description:"A curious girl discovers a little house in the woods. Three bowls, three chairs and three surprised bears await."},
-{id:"pigs",title:"The Three Little Pigs",fr:"Les Trois Petits Cochons",category:"Little readers",level:"A1",minutes:7,theme:"rose",ready:false,description:"Three little pigs build three very different houses. One hungry wolf has other ideas."},
-{id:"red",title:"Little Red Riding Hood",fr:"Le Petit Chaperon rouge",category:"Little readers",level:"A1",minutes:8,theme:"berry",ready:false,description:"A walk through the woods, a basket of goodies and a wolf with a plan."},
-{id:"clockwork",title:"The Clockwork Detective",fr:"Le Détective mécanique",category:"Teen shelf",level:"A2",minutes:12,theme:"blue",ready:false,description:"A missing invention, a locked workshop and a mystery that ticks louder every hour."},
-{id:"train",title:"The Last Train Home",fr:"Le Dernier Train",category:"Grown-up reads",level:"B1",minutes:18,theme:"night",ready:false,description:"A late-night journey brings two strangers face to face with a secret neither expected."},
-{id:"velvet",title:"A Velvet Alibi",fr:"Un Alibi de velours",category:"BookTok corner",level:"B2",minutes:20,theme:"velvet",ready:false,description:"Sharp tongues, slow-burn chemistry and one very inconvenient secret."},
-{id:"evidence",title:"The Quiet Evidence",fr:"Les Preuves silencieuses",category:"True crime",level:"B2",minutes:22,theme:"slate",ready:false,description:"A carefully sourced case file exploring evidence, investigation and the stories facts can tell."}
+{id:"pigs",title:"The Three Little Pigs",fr:"Les Trois Petits Cochons",category:"Little readers",level:"A1",minutes:7,theme:"rose",ready:true,description:"Three little pigs build three very different houses. One hungry wolf has other ideas."},
+{id:"red",title:"Little Red Riding Hood",fr:"Le Petit Chaperon rouge",category:"Little readers",level:"A1",minutes:8,theme:"berry",ready:true,description:"A walk through the woods, a basket of goodies and a wolf with a plan."},
+{id:"clockwork",title:"The Clockwork Detective",fr:"Le Détective mécanique",category:"Teen shelf",level:"A2",minutes:12,theme:"blue",ready:true,description:"A missing invention, a locked workshop and a mystery that ticks louder every hour."},
+{id:"train",title:"The Last Train Home",fr:"Le Dernier Train",category:"Grown-up reads",level:"B1",minutes:18,theme:"night",ready:true,description:"A late-night journey brings two strangers face to face with a secret neither expected."},
+{id:"velvet",title:"A Velvet Alibi",fr:"Un Alibi de velours",category:"BookTok corner",level:"B2",minutes:20,theme:"velvet",ready:true,description:"Sharp tongues, slow-burn chemistry and one very inconvenient secret."},
+{id:"evidence",title:"The Quiet Evidence",fr:"Les Preuves silencieuses",category:"True crime",level:"B2",minutes:22,theme:"slate",ready:true,description:"A carefully sourced case file exploring evidence, investigation and the stories facts can tell."}
 ];
